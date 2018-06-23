@@ -1,0 +1,57 @@
+.ytred {
+	white-space: nowrap;
+	overflow: hidden;
+	position: relative;
+}
+
+.ytred .ytred-item {
+	box-sizing: border-box;
+	width: 200px;
+	height: 300px;
+	background-color: red;
+	display: inline-block;
+	-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-ms-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.ytred .ytred-item:hover {
+	-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-ms-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+
+.ytred-wrap {
+	position: relative;
+	-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-ms-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+
+
+/* title container */
+.ytred-title-container {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+
+.ytred-title {
+	font-size: 18px;
+}
+
+.ytred-arrow-container {
+	display: flex;
+	display: -webkit-flex;
+}
+
+.ytred-left-arrow, .ytred-right-arrow {
+	padding-left: 20px;
+	cursor: pointer;
+}
