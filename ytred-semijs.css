@@ -16,6 +16,8 @@
 	transition: all .2s ease-in;
 	cursor: pointer;
 	margin-right: 5px;
+	position: relative;
+	overflow: hidden;
 }
 
 .ytred .ytred-item:hover {
@@ -54,4 +56,25 @@
 .ytred-left-arrow, .ytred-right-arrow {
 	padding-left: 20px;
 	cursor: pointer;
+}
+
+
+/* info section */
+.ytred-info-container {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 260px 10px 10px 10px;
+	white-space: pre-wrap;
+	color: rgba(255, 255, 255, 0.8);
+	background: rgba(0, 0, 0, 0.8);
+	background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+}
+
+.ytred-info-title {
+	font-weight: bold;
+	font-size: 19px;
 }

@@ -43,6 +43,7 @@ $.plugin(function (prop) {
 			while (true) {
 				if (containerWidth < itemWidth) {
 					break;
+
 				}
 
 				itemsCanFit++;
@@ -69,6 +70,15 @@ $.plugin(function (prop) {
 					backgroundPosition: "center",
 					width: (el.width() / itemsCanFit) - 5 + "px"
 				});
+
+				var infoTitle = $("<div>").addClass("ytred-info-title").html(item.attr("data-title"));
+				var infoDescription = $("<div>").addClass("ytred-info-description").html(item.attr("data-description"));
+				var infoContainer = $("<div>").addClass("ytred-info-container")
+					.append(infoTitle)
+					.append(infoDescription);
+
+				item.append(infoContainer);
+
 
 				item.unbind("mouseover");
 				item.bind("mouseover", function() {
